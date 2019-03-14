@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portfolio Style Guide</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+    	<h1>Portfolio Style Guide</h1>
+    </header>
+
+    <section>
+    	<h1>Header 1</h1>
+    	<h2>Header 2</h2>
+    	<h3>Header 3</h3>
+    </section>
+
+    <section>
+    	<h2>Paragraph</h2>
+    	<h3 class="indent">Bio</h3>
+    	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm David and I'm an aspiring game creator. I have explored many aspects of games and have worked on the design, art, sound, and coding of games in projects that I have worked on. Whether it be game design or the development aspect, I enjoy coming up with creative game mechanics. I strive to create things that are enjoyable or provide entertainment (it doesn't have to be just games).
+    	<br><br><br>
+    	<h3 class="indent">Process Analysis</h3>
+    	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first task was figuring out how the we would control the speed of the in-game character with the speed of the pedaling. Initially my idea was to use a light sensor in conjunction with an LED attached to the wheel of the bike to calculate the frequency at which the wheel rotated. However, the readings from the LED were unreliable because the light sensor picked up the ambient light. 
+    	<br><br>
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My solution to this was to attach a magnet to the wheel of the bike and a magnet sensor to the inner frame which made readings much more reliable. The idea behind this was that the sensor would receive a positive reading every time the wheel made a full rotation and the magnet passes the sensor. Then, the program would count the number of times the magnet passed within a set interval. The problem with this method was that the speed of the game character would only update after each interval which made changes in speed feel unresponsive. To circumvent this problem, I tried a different approach to adjusting the character’s speed. Instead of calculating the number of rotations in a given interval, I changed the system to add a decaying acceleration to the character with each positive reading from the sensor. Essentially, this adds “gas” to a tank which changes the speed depending on how quickly the tank filled and emptied. This allowed for a smoother transition between speeds which reduced choppiness. From working on this project, I learned that sometimes it is more effective to explore other methods if the initial idea doesn’t work out. Instead of trying to make the rotation frequency code work, I took a step back to analyze and restructure how it operated on the fundamental level.</p>
+    </section>
+
+    <section>
+    	<h2>Links</h2>
+    	<p class = "link"><a href="">this is a link</a></p>
+    	<p class = "in-text-link">an <a href ="">in-text</a> link</p>
+    	<p class = "emphasis-link"><a href =""><em>emphasis</em></a></p>
+    </section>
+
+    <section>
+    	<h2>Buttons</h2>
+    	<p><button class = "button1">Button One</button></p>
+    	<p><button class = "button2">button two</button2></p>
+    </section>
+
+    <section>
+    	<h2>Images</h2>
+    	<div class="img-link-container">
+    		<img class="img-link" src="img/ori.jpg">
+    		<div class="img-link-overlay">
+    			<div class="john">Image Link</div>
+    		</div>
+    	</div>
+    </section>
+
+</body>
+
+
+</html>

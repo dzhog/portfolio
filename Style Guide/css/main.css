@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+*{
+	font-family: 'Roboto Mono', monospace;
+}
+
+body{		background:#35383d;
+			color: white;
+			padding:2rem;}
+
+header{		border-bottom-style: solid}
+
+section{	padding:3rem;
+			border-bottom-style: solid;}
+
+
+a{			text-decoration: none;
+			color:#1f915c;}
+a:hover{	text-decoration: underline;
+			transition-duration:.5s;}
+
+h1{			letter-spacing: .2rem;}
+
+h2{			text-decoration: underline;}
+
+h3{			font-style: italic;}
+
+.indent{	margin-left: 2rem;}
+
+p{			margin-left: 2rem;
+			line-height: 1.5rem;
+			letter-spacing: 0rem;
+			word-spacing: -0.2rem;
+			width:50%;}
+
+
+button{		display:block;
+			border:none;
+			letter-spacing: .1rem;
+			cursor:pointer;}
+
+.button1{	background-color:#1f915c;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			font-weight: bold;
+			color: #35383d;}
+
+.button2{	background: linear-gradient(to right, #1f915c 50%, #35383d 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+			transition: all .5s ease-out;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			padding-top: 1rem;
+			padding-bottom: 0rem;
+			color:white;
+			border-style: solid;
+			border-radius: .5rem;
+			border-width: .1rem;
+			border-color: #1f915c;}
+
+.button2:hover{
+			background-position: left bottom;
+			color:#35383d;}
+
+
+.img-link-container{
+			display:inline-block;
+			position: relative;
+			border-style: solid;
+			border-width: 0.05rem;
+			border-color: #1f915c;
+			background: linear-gradient(to right, #1f915c 50%, rgba(0,0,0,0) 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+			transition: all .5s ease-out;
+			z-index: 2;}
+
+.img-link{	filter: blur(1.5px);
+			width:100%;}
+
+.img-link:hover{
+			opacity: 0.7;}
+
+.img-link-container:hover .img-link-overlay{
+			opacity:1;}
+
+.img-link-container:hover{
+			background-position: left bottom;
+			cursor:pointer;}
+
+.img-link-overlay{
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;}
+
+.john{		pointer-events: none;}
+
+em{			text-decoration: underline;
+			font-style:normal;}
+em:hover{	font-weight: bold;}
