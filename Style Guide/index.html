@@ -2,71 +2,61 @@
 <html lang="en">
 
 <head>
-	<title>Portfolio Style Guide</title>
+	<title>Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
-	<header>
-    	<h1>Portfolio Style Guide</h1>
-    </header>
+	<div class="landing">
+		<h1 id="landing"></h1>
+		<br><br>
+		<button class="button2"><a href='#about'>continue</a></button><br>
+	</div>
+	<script>
+		var i = 0;
+		var txt = 'Hello World, I am David Zhong, a game designer.';
+		var speed = 40;
+		function typeWriter() {
+		  if (i < txt.length) {
+		    document.getElementById("landing").innerHTML += txt.charAt(i);
+		    i++;
+		    setTimeout(typeWriter, speed);
+		  }
+		}
+		typeWriter();
+	</script>
 
-    <section>
-    	<h1>Header 1</h1>
-    	<h2>Header 2</h2>
-    	<h3>Header 3</h3>
-    </section>
 
-    <section>
-    	<h2>Paragraph</h2>
-    	<h3 class="indent">Bio</h3>
-    	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm David and I'm an aspiring game creator. I have explored many aspects of games and have worked on the design, art, sound, and coding of games in projects that I have worked on. Whether it be game design or the development aspect, I enjoy coming up with creative game mechanics. I strive to create things that are enjoyable or provide entertainment (it doesn't have to be just games).</p>
-    	<br><br><br>
-    	<h3 class="indent">Process Analysis1: RIDE</h3>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    	RIDE was a project done in the IAT267 class where teams were tasked with creating an interactive system combining physical sensors and coding. Much of the work I did was in the sensor code which required restructuring mid project. When designing this project, the concept was “an intuitive game controller.” The idea that I came up with was a game where the player controlled a vehicle via pedaling on a stationary bike. We were able to achieve this by using Arduino to read physical sensors and transferring the data to Processing where the game ran.
-    	<br><br>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    	The first task was figuring out how the we would control the speed of the in-game character with the speed of the pedaling. Initially my idea was to use a light sensor in conjunction with an LED attached to the wheel of the bike to calculate the frequency at which the wheel rotated. However, the readings from the LED were unreliable because the light sensor picked up the ambient light. 
-    	<br><br>
-    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My solution to this was to attach a magnet to the wheel of the bike and a magnet sensor to the inner frame which made readings much more reliable. The idea behind this was that the sensor would receive a positive reading every time the wheel made a full rotation and the magnet passes the sensor. Then, the program would count the number of times the magnet passed within a set interval. The problem with this method was that the speed of the game character would only update after each interval which made changes in speed feel unresponsive. To circumvent this problem, I tried a different approach to adjusting the character’s speed. Instead of calculating the number of rotations in a given interval, I changed the system to add a decaying acceleration to the character with each positive reading from the sensor. Essentially, this adds “gas” to a tank which changes the speed depending on how quickly the tank filled and emptied. This allowed for a smoother transition between speeds which reduced choppiness. From working on this project, I learned that sometimes it is more effective to explore other methods if the initial idea doesn’t work out. Instead of trying to make the rotation frequency code work, I took a step back to analyze and restructure how it operated on the fundamental level.</p>
-    	<br><br><br>
-    	<h3 class="indent">Process Analysis2: Mercs</h3>
-    	<br><br>
-    	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mercs was a game created in the IAT410 class. Our team chose to create a turn-based JRPG style game for PC which encorporated elements of hero collector games often found on the mobile game market. I was in charge of game design and was a part of development.
-    	<br><br>
-    	The first step we took in creating this game was to come up with a premise. The members of my team were all familiar with RPG games, and so we decided to create something in that realm as it was the type of game that we were the most knowledgeable on. After deciding on the premise, we brainstormed ideas a narrative and mechanics that would work well with the narrative. 
-    	<br><br>
-    	The next step was to begin development after confirming that everyone was on the same page. The process went something like:<br><br>1. Together, decide on what's being worked on for the week and how things should be.<br>2. Split off and individually work on our resposibilities.<br>3. Come together and combine parts.<br>4. Test it.<br><br>We worked in unity, and I created a prototype of the game so that we could play test the core mechanics to see if the game would even be fun before we committed to it. After the first round of playtesting, we continued to work on the game in parts. That way we could continue playtesting and incorporate feedback as we worked. Eventually, we had a full palyable version of the game. The end.</p>
-    </section>
+	<div id='the'></div>
+	
+	<!--
+	<script>
+		$(document).ready(function() {
+		    $('#the').load("style.html");
+		}) ; 
+	</script>
+	-->
 
-    <section>
-    	<h2>Links</h2>
-    	<p class = "link"><a href="">this is a link</a></p>
-    	<p class = "in-text-link">an <a href ="">in-text</a> link</p>
-    	<p class = "emphasis-link"><a href =""><em>emphasis</em></a></p>
-    </section>
 
-    <section>
-    	<h2>Buttons</h2>
-    	<p><button class = "button1">Button One</button></p>
-    	<p><button class = "button2">button two</button2></p>
-    </section>
+	<div id='about' class="centertext">
+		<h3>About Me</h3>
+		<p class="about">Hi, I'm David and I'm an aspiring game creator. I have explored many aspects of games and have worked on the design, art, sound, and coding of games in projects that I have worked on. Whether it be game design or the development aspect, I enjoy coming up with creative game mechanics. I strive to create things that are enjoyable or provide entertainment (it doesn't have to be just games).
+		<br>
+		<br>
+		<button class="button2"><a href='#works'>continue</a></button><br></p>
 
-    <section>
-    	<h2>Images</h2>
-    	<div class="img-link-container">
-    		<img class="img-link" src="img/ori.jpg">
-    		<div class="img-link-overlay">
-    			<div class="john">Image Link</div>
-    		</div>
-    	</div>
-    </section>
+
+	</div>
+
+	<div id='works'>
+		<p>RIDE was a project done in the IAT267 class where teams were tasked with creating an interactive system combining physical sensors and coding. Much of the work I did was in the sensor code which required restructuring mid project. When designing this project, the concept was “an intuitive game controller.” The idea that I came up with was a game where the player controlled a vehicle via pedaling on a stationary bike. We were able to achieve this by using Arduino to read physical sensors and transferring the data to Processing where the game ran. <br><br>
+
+	    The first task was figuring out how the we would control the speed of the in-game character with the speed of the pedaling. Initially my idea was to use a light sensor in conjunction with an LED attached to the wheel of the bike to calculate the frequency at which the wheel rotated. However, the readings from the LED were unreliable because the light sensor picked up the ambient light. <br><br>
+
+	    My solution to this was to attach a magnet to the wheel of the bike and a magnet sensor to the inner frame which made readings much more reliable. The idea behind this was that the sensor would receive a positive reading every time the wheel made a full rotation and the magnet passes the sensor. Then, the program would count the number of times the magnet passed within a set interval. The problem with this method was that the speed of the game character would only update after each interval which made changes in speed feel unresponsive. To circumvent this problem, I tried a different approach to adjusting the character’s speed. Instead of calculating the number of rotations in a given interval, I changed the system to add a decaying acceleration to the character with each positive reading from the sensor. Essentially, this adds “gas” to a tank which changes the speed depending on how quickly the tank filled and emptied. This allowed for a smoother transition between speeds which reduced choppiness. From working on this project, I learned that sometimes it is more effective to explore other methods if the initial idea doesn’t work out. Instead of trying to make the rotation frequency code work, I took a step back to analyze and restructure how it operated on the fundamental level.</p>
+	</div>
 
 </body>
-
-
 </html>

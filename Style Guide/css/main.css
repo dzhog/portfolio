@@ -27,12 +27,25 @@ h3{			font-style: italic;}
 
 .indent{	margin-left: 2rem;}
 
-p{			margin-left: 2rem;
+p{
 			line-height: 1.5rem;
 			letter-spacing: 0rem;
 			word-spacing: -0.2rem;
-			width:50%;}
+			width:100vh;}
 
+.landing{	height: 100vh;
+			margin-top: 20%;
+			text-align: center;}
+
+.about{		height: 100vh;
+			text-align: center;
+			top:50vh;
+			margin-left:25%;
+			width:50%;
+}
+
+.centertext{
+			text-align: center;}
 
 button{		display:block;
 			border:none;
@@ -51,15 +64,16 @@ button{		display:block;
 			background-size: 200% 100%;
 			background-position: right bottom;
 			transition: all .5s ease-out;
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
 			padding-top: 1rem;
-			padding-bottom: 0rem;
+			padding-bottom: 1rem;
 			color:white;
 			border-style: solid;
 			border-radius: .5rem;
 			border-width: .1rem;
-			border-color: #1f915c;}
+			border-color: #1f915c;
+			margin-left: 45%}
 
 .button2:hover{
 			background-position: left bottom;
