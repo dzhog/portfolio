@@ -38,10 +38,19 @@ p{
 			margin-top: 20%;
 			text-align: center;}
 
-.about{		height: 100vh;
+#about{		height: 100vh;
 			text-align: center;
-			top:50vh;
+			padding-top:30vh;
 			margin-left:25%;
+			line-height:1.5rem;
+			width:50%;
+}
+
+#works{		height: 100vh;
+			text-align: center;
+			padding-top:10vh;
+			margin-left:24%;
+			line-height:1.5rem;
 			width:50%;
 }
 
@@ -74,12 +83,20 @@ button{		display:block;
 			border-radius: .5rem;
 			border-width: .1rem;
 			border-color: #1f915c;
-			margin-left: 45%}
+			text-align: center;
+			margin-left: 50%;
+			transform: translate(-50%);
+			}
 
 .button2:hover{
 			background-position: left bottom;
 			color:#35383d;}
 
+.img1{
+	margin-left: 50%;
+	transform: translate(-50%);
+	width:90%;
+}
 
 .img-link-container{
 			display:inline-block;
