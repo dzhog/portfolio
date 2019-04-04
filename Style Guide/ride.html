@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--
+	<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+	</script>
+	-->
+</head>
+<body id="top">
+	<nav class="delay1">
+	    <a href="index.html">Home</a>
+	    <a href="index.html#about">About</a>
+	    <a href="index.html#works">Works</a>
+	</nav>
+	<div class="landing">
+		<div>
+			<h3>&nbsp;&nbsp;&nbsp;&nbsp;Ride</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/N3zqIMtL3B8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>RIDE was a project done in the IAT267 class where teams were tasked with creating an interactive system combining physical sensors and coding. Much of the work I did was in the sensor code which required restructuring mid project. When designing this project, the concept was “an intuitive game controller.” The idea that I came up with was a game where the player controlled a vehicle via pedaling on a stationary bike. We were able to achieve this by using Arduino to read physical sensors and transferring the data to Processing where the game ran.</p> <br><br>
+
+		    <p>The first task was figuring out how the we would control the speed of the in-game character with the speed of the pedaling. Initially my idea was to use a light sensor in conjunction with an LED attached to the wheel of the bike to calculate the frequency at which the wheel rotated. However, the readings from the LED were unreliable because the light sensor picked up the ambient light.</p> <br><br>
+
+		    <img src="img/ride.png">
+		    <br><br>
+		    <p>My solution to this was to attach a magnet to the wheel of the bike and a magnet sensor to the inner frame which made readings much more reliable. The idea behind this was that the sensor would receive a positive reading every time the wheel made a full rotation and the magnet passes the sensor. Then, the program would count the number of times the magnet passed within a set interval. The problem with this method was that the speed of the game character would only update after each interval which made changes in speed feel unresponsive. To circumvent this problem, I tried a different approach to adjusting the character’s speed. Instead of calculating the number of rotations in a given interval, I changed the system to add a decaying acceleration to the character with each positive reading from the sensor. Essentially, this adds “gas” to a tank which changes the speed depending on how quickly the tank filled and emptied. This allowed for a smoother transition between speeds which reduced choppiness. From working on this project, I learned that sometimes it is more effective to explore other methods if the initial idea doesn’t work out. Instead of trying to make the rotation frequency code work, I took a step back to analyze and restructure how it operated on the fundamental level.</p>
+		</div>
+
+	</div>
+	
+
+
+
+</body>
+</html>
