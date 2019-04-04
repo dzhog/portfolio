@@ -94,11 +94,36 @@ p{			font-size: 1.5vh;
 			line-height:1.5rem;
 }
 
+.video{
+	width:75%;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-header{
+	padding-top:5vh;
+	text-align: center;
+}
+.section-header{
+	width:75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #img1{
 	opacity: .5;
 }
 #img2{
 	opacity: .5;
+}
+
+.analysis p{
+	width:75%;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .ride-container{
@@ -263,6 +288,15 @@ em:hover{	font-weight: bold;}
 		display: block;
 	}
 
+	.video{
+		width:100%;
+	}
+
+	.analysis p{
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	.ride-container{
 		max-width: 100%;
