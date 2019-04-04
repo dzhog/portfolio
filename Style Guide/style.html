@@ -33,14 +33,7 @@
     	The first task was figuring out how the we would control the speed of the in-game character with the speed of the pedaling. Initially my idea was to use a light sensor in conjunction with an LED attached to the wheel of the bike to calculate the frequency at which the wheel rotated. However, the readings from the LED were unreliable because the light sensor picked up the ambient light. 
     	<br><br>
     	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My solution to this was to attach a magnet to the wheel of the bike and a magnet sensor to the inner frame which made readings much more reliable. The idea behind this was that the sensor would receive a positive reading every time the wheel made a full rotation and the magnet passes the sensor. Then, the program would count the number of times the magnet passed within a set interval. The problem with this method was that the speed of the game character would only update after each interval which made changes in speed feel unresponsive. To circumvent this problem, I tried a different approach to adjusting the character’s speed. Instead of calculating the number of rotations in a given interval, I changed the system to add a decaying acceleration to the character with each positive reading from the sensor. Essentially, this adds “gas” to a tank which changes the speed depending on how quickly the tank filled and emptied. This allowed for a smoother transition between speeds which reduced choppiness. From working on this project, I learned that sometimes it is more effective to explore other methods if the initial idea doesn’t work out. Instead of trying to make the rotation frequency code work, I took a step back to analyze and restructure how it operated on the fundamental level.</p>
-    	<br><br><br>
-    	<h3 class="indent">Process Analysis2: Mercs</h3>
-
-    	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mercs was a game created in the IAT410 class. Our team chose to create a turn-based JRPG style game for PC which encorporated elements of hero collector games often found on the mobile game market. I was in charge of game design and was a part of development.
-    	<br><br>
-    	The first step we took in creating this game was to come up with a premise. The members of my team were all familiar with RPG games, and so we decided to create something in that realm as it was the type of game that we were the most knowledgeable on. After deciding on the premise, we brainstormed ideas a narrative and mechanics that would work well with the narrative. 
-    	<br><br>
-    	The next step was to begin development after confirming that everyone was on the same page. The process went something like:<br><br>1. Together, decide on what's being worked on for the week and how things should be.<br>2. Split off and individually work on our resposibilities.<br>3. Come together and combine parts.<br>4. Test it.<br><br>We worked in unity, and I created a prototype of the game so that we could play test the core mechanics to see if the game would even be fun before we committed to it. After the first round of playtesting, we continued to work on the game in parts. That way we could continue playtesting and incorporate feedback as we worked. Eventually, we had a full palyable version of the game. The end.</p>
+ 
     </section>
 
     <section>
@@ -59,9 +52,9 @@
     <section>
     	<h2>Images</h2>
     	<div class="img-link-container">
-    		<img class="img-link" src="img/ori.jpg">
+    		<img class="img-link" src="img/ride.png">
     		<div class="img-link-overlay">
-    			<div class="john">Image Link</div>
+    		<div class="john">Image Link</div>
     		</div>
     	</div>
     </section>

@@ -11,20 +11,35 @@ body{		background-color:#35383d;
 			color: white;
 			padding:2rem;}
 
-nav{		top:0;
+nav{		background-color: black;
+			top:0;
 			left:0;
-			background-color:#35383d;
+
 			width:100%;
 			overflow: hidden;
 			position:fixed;
 			z-index: 1;}
 
+.foot{		bottom:0;
+			left:0;
+			padding:5vh;
+			background-color:black;
+			width:100%;
+			overflow: hidden;
+			text-align: center;
+			position:fixed;
+			z-index: 1;}
 
+.foot a{	
+			padding: 5%;
+			font-size: 1.5vh;
+			letter-spacing: .2vw;}
 
 nav a{		float:right;
 			padding: 2%;
 			font-size: 2vh;
 			letter-spacing: .2vw;}
+
 
 header{		border-bottom-style: solid}
 
@@ -283,13 +298,24 @@ em:hover{	font-weight: bold;}
 
 	.about{ width:100%;}
 	.bw{ 	width:100%; 
+		
 			}
 	.about p{
 		display: block;
 	}
 
+	.landing h1{
+		text-align: left;
+		word-spacing: 2.5vw;
+		margin-left: 5vw;
+	}
+
 	.video{
 		width:100%;
+	}
+
+	.foot{
+		visibility: hidden;
 	}
 
 	.analysis p{
